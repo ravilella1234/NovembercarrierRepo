@@ -3,7 +3,7 @@ package com.project;
 public class DemoClass {
 
 	
-	int a=10,b=20,c;
+	int a=10,b=20,c,result;
 	
 	public void add()
 	{
