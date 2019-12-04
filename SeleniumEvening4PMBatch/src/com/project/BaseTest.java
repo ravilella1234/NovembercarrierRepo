@@ -62,7 +62,7 @@ public class BaseTest
 	{
 		//driver.get(p.getProperty(url));
 		driver.navigate().to(p.getProperty(url));
-		
+		driver.manage().window().maximize();
 	}
 
 }
