@@ -1,0 +1,6 @@
+initializing the properties files.....
+Laucned the browser :- chrome
+Navigated to Url :- https://www.amazon.in
+Selected the item :- Books By using the locator :- searchDropdownBox
+Entered the text :- Harry Potter By using the locator :- twotabsearchtextbox
+Clicked on button by using locator :- //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
