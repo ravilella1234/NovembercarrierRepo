@@ -15,6 +15,9 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class BaseTest 
 {
 	public static WebDriver driver;
@@ -22,7 +25,8 @@ public class BaseTest
 	static FileInputStream fis;
 	public static Properties p,or;
 	//public static Properties or;
-	
+	public static ExtentReports report = ExtentManager.getInstance();
+	public static ExtentTest test;
 	
 	
 	public static void init() throws Exception
@@ -36,6 +40,9 @@ public class BaseTest
 		or.load(fis);
 		
 		PropertyConfigurator.configure(projectPath+"//log4j.properties");
+		
+		
+		
 	}
 	
 	
