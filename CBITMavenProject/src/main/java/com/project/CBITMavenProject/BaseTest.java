@@ -52,7 +52,7 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(p.getProperty(browser).equals("chrome"))
+		if(browser.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", projectPath+"//Drivers//chromedriver.exe");
 			
@@ -63,10 +63,10 @@ public class BaseTest
 			
 			driver=new ChromeDriver(option);
 		}
-		else if(p.getProperty(browser).equals("firefox"))
+		else if(browser.equals("firefox"))
 		{
 			ProfilesIni p=new ProfilesIni();
-			FirefoxProfile profile = p.getProfile("lella");
+			FirefoxProfile profile = p.getProfile("default");
 			
 			//notifications
 			profile.setPreference("dom.webnotifications.enabled", false);
