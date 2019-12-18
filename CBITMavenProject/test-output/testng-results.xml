@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MySuite" duration-ms="71" started-at="2019-12-17T11:49:11Z" finished-at="2019-12-17T11:49:11Z">
+    <groups>
+    </groups>
+    <test name="MyTest" duration-ms="71" started-at="2019-12-17T11:49:11Z" finished-at="2019-12-17T11:49:11Z">
+      <class name="com.project.CBITMavenProject.TestNG_001">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.project.CBITMavenProject.TestNG_001@4034c28c]" name="f" duration-ms="9" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.project.CBITMavenProject.TestNG_001 -->
+      <class name="com.project.CBITMavenProject.TestNG_002">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="beforeSuite" is-config="true" duration-ms="38" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="z()[pri:1, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="z" duration-ms="2" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- z -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="afterMethod" is-config="true" duration-ms="2" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:3, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="f" duration-ms="3" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="afterMethod" is-config="true" duration-ms="5" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.project.CBITMavenProject.TestNG_002@2d9d4f9d]" name="afterSuite" is-config="true" duration-ms="1" started-at="2019-12-17T17:19:11Z" finished-at="2019-12-17T17:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.project.CBITMavenProject.TestNG_002 -->
+    </test> <!-- MyTest -->
+  </suite> <!-- MySuite -->
+</testng-results>
