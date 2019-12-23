@@ -14,7 +14,7 @@ public class LinksTesting1 extends BaseTest
 {
 
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"regression","sanity"})
 	@Parameters("browser")
 	public void setup(String browserType) throws Exception
 	{
@@ -31,7 +31,7 @@ public class LinksTesting1 extends BaseTest
 	}
 	
 	
-	@Test()
+	@Test(groups = {"regression","sanity"})
 	public void linktesting1()
 	 {
 		String expval="Google Images";
@@ -42,7 +42,7 @@ public class LinksTesting1 extends BaseTest
 		Assert.assertEquals(actval, expval);
 	 }
 	
-	@AfterMethod
+	@AfterMethod(groups = {"regression","sanity"})
 	public void tearDown()
 	{
 		driver.quit();

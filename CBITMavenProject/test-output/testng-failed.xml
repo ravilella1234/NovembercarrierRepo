@@ -1,37 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="firefoxTest(failed)">
-    <parameter name="browser" value="firefox"/>
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.project.CBITMavenProject.LinksTesting1">
+      <class name="com.project.CBITMavenProject.TestDependency">
         <methods>
-          <include name="setup"/>
-          <include name="linktesting1"/>
-          <include name="tearDown"/>
+          <include name="orange"/>
+          <include name="blue"/>
+          <include name="green"/>
+          <include name="white"/>
         </methods>
-      </class> <!-- com.project.CBITMavenProject.LinksTesting1 -->
-      <class name="com.project.CBITMavenProject.CheckBox1">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="checkboxTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.project.CBITMavenProject.CheckBox1 -->
-      <class name="com.project.CBITMavenProject.TC_006">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="amazon"/>
-        </methods>
-      </class> <!-- com.project.CBITMavenProject.TC_006 -->
-      <class name="com.project.CBITMavenProject.RadioButton1">
-        <methods>
-          <include name="checkboxTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.project.CBITMavenProject.RadioButton1 -->
+      </class> <!-- com.project.CBITMavenProject.TestDependency -->
     </classes>
-  </test> <!-- firefoxTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

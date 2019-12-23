@@ -11,7 +11,7 @@ import org.testng.annotations.AfterMethod;
 public class TC_006 extends BaseTest
 {
   
-  @BeforeMethod
+  @BeforeMethod(groups = {"regression"})
   @Parameters("browser")
   public void beforeMethod(String browserType) throws Exception 
   {
@@ -28,7 +28,7 @@ public class TC_006 extends BaseTest
   }
   
   
-  @Test
+  @Test(groups = {"regression"})
   public void amazon()
   {
 	  	selectItem("amazondropbox_id","amazondropvalue");
@@ -41,7 +41,7 @@ public class TC_006 extends BaseTest
 		test.log(LogStatus.PASS, "Clicked on button by using locator :- "+ or.getProperty("amazonsearchbutton_xpath"));
   }
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression"})
   public void afterMethod() 
   {
 	  driver.quit();
