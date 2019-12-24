@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.listners.Listener"/>
+    <listener class-name="com.listners.RetryListener"/>
+  </listeners>
   <test name="Test(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
     <classes>
-      <class name="com.project.CBITMavenProject.LinksTesting1">
-        <methods>
-          <include name="setup"/>
-          <include name="linktesting1"/>
-        </methods>
-      </class> <!-- com.project.CBITMavenProject.LinksTesting1 -->
-      <class name="com.project.CBITMavenProject.RadioButton1">
-        <methods>
-          <include name="checkboxTest"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.project.CBITMavenProject.RadioButton1 -->
       <class name="com.project.CBITMavenProject.TC_006">
         <methods>
+          <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="amazon"/>
         </methods>
