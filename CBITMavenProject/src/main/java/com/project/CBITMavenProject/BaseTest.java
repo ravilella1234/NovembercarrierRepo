@@ -36,6 +36,7 @@ public class BaseTest
 	public static String screenshotFileName=null;
 	
 	
+	
 	static
 	{
 		Date dt=new Date();
