@@ -5,7 +5,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.project.CBITMavenProject.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class FaceBook extends BaseTest

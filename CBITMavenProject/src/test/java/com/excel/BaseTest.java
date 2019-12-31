@@ -1,4 +1,4 @@
-package com.project.CBITMavenProject;
+package com.excel;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,12 +19,14 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.io.FileHandler;
+import org.testng.annotations.BeforeTest;
+
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class BaseTest 
+public class BaseTest
 {
 	public static WebDriver driver;
 	public  static String projectPath=System.getProperty("user.dir");
@@ -34,7 +36,16 @@ public class BaseTest
 	public static ExtentReports report = ExtentManager.getInstance();
 	public static ExtentTest test;
 	public static String screenshotFileName=null;
+	public static ExcelAPI xls=null;
 	
+	
+	@BeforeTest
+	public void startProcess() throws Exception
+	{
+		System.out.println("iam Beforetest.....");
+		init();
+		xls=new ExcelAPI("C:\\Users\\DELL\\Desktop\\SuiteA.xlsx");
+	}
 	
 	
 	static
@@ -54,6 +65,7 @@ public class BaseTest
 		or.load(fis);
 		
 		PropertyConfigurator.configure(projectPath+"//log4j.properties");	
+		
 	}
 	
 	

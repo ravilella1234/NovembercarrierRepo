@@ -1,12 +1,12 @@
 package com.project.CBITMavenProject;
 
-import org.testng.annotations.Test;
-
-import com.relevantcodes.extentreports.LogStatus;
-
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+
+import com.excel.BaseTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class TC_006 extends BaseTest
 {

@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.excel.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class CheckBox1 extends BaseTest
