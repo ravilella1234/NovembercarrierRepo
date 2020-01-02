@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1609" started-at="2019-12-31T10:39:34Z" finished-at="2019-12-31T10:39:36Z">
+  <suite name="Suite" duration-ms="21534" started-at="2020-01-02T10:38:10Z" finished-at="2020-01-02T10:38:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1609" started-at="2019-12-31T10:39:34Z" finished-at="2019-12-31T10:39:36Z">
-      <class name="com.excel.TC_004">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.excel.TC_004@ed9d034]" name="startProcess" is-config="true" duration-ms="1503" started-at="2019-12-31T10:39:34Z" finished-at="2019-12-31T10:39:36Z">
+    <test name="Test" duration-ms="21534" started-at="2020-01-02T10:38:10Z" finished-at="2020-01-02T10:38:31Z">
+      <class name="com.pageObjectModel.POM_001">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="startProcess" is-config="true" duration-ms="1365" started-at="2020-01-02T10:38:10Z" finished-at="2020-01-02T10:38:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="m1(java.util.Hashtable)[pri:0, instance:com.excel.TC_004@ed9d034]" name="m1" duration-ms="10" started-at="2019-12-31T10:39:36Z" data-provider="dp" finished-at="2019-12-31T10:39:36Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="beforeTest" is-config="true" duration-ms="14746" started-at="2020-01-02T10:38:11Z" depends-on-methods="com.excel.BaseTest.startProcess" finished-at="2020-01-02T10:38:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Col3=Dummy3, Col2=Dummy2, Col1=Dummy1, Runmode=Y}]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- m1 -->
-        <test-method status="PASS" signature="m1(java.util.Hashtable)[pri:0, instance:com.excel.TC_004@ed9d034]" name="m1" duration-ms="7" started-at="2019-12-31T10:39:36Z" data-provider="dp" finished-at="2019-12-31T10:39:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Col3=Dummy7, Col2=Dummy6, Col1=Dummy5, Runmode=N}]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="f" duration-ms="5384" started-at="2020-01-02T10:38:26Z" finished-at="2020-01-02T10:38:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- m1 -->
-      </class> <!-- com.excel.TC_004 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-01-02T10:38:31Z" finished-at="2020-01-02T10:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.pageObjectModel.POM_001 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
