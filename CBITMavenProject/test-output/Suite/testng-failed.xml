@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.listners.Listener"/>
-    <listener class-name="com.listners.RetryListener"/>
-  </listeners>
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.project.CBITMavenProject.TC_006">
+      <class name="com.pageObjectModel.POM_001">
         <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="amazon"/>
+          <include name="f"/>
+          <include name="afterTest"/>
+          <include name="startProcess"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- com.project.CBITMavenProject.TC_006 -->
+      </class> <!-- com.pageObjectModel.POM_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
