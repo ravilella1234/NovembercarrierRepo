@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21534" started-at="2020-01-02T10:38:10Z" finished-at="2020-01-02T10:38:31Z">
+  <suite name="Suite" duration-ms="24972" started-at="2020-01-03T10:37:32Z" finished-at="2020-01-03T10:37:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21534" started-at="2020-01-02T10:38:10Z" finished-at="2020-01-02T10:38:31Z">
+    <test name="Test" duration-ms="24972" started-at="2020-01-03T10:37:32Z" finished-at="2020-01-03T10:37:57Z">
       <class name="com.pageObjectModel.POM_001">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="startProcess" is-config="true" duration-ms="1365" started-at="2020-01-02T10:38:10Z" finished-at="2020-01-02T10:38:11Z">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="startProcess" is-config="true" duration-ms="1451" started-at="2020-01-03T10:37:32Z" finished-at="2020-01-03T10:37:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="beforeTest" is-config="true" duration-ms="14746" started-at="2020-01-02T10:38:11Z" depends-on-methods="com.excel.BaseTest.startProcess" finished-at="2020-01-02T10:38:26Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="beforeTest" is-config="true" duration-ms="13674" started-at="2020-01-03T10:37:34Z" depends-on-methods="com.excel.BaseTest.startProcess" finished-at="2020-01-03T10:37:48Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="f" duration-ms="5384" started-at="2020-01-02T10:38:26Z" finished-at="2020-01-02T10:38:31Z">
+        <test-method status="PASS" signature="registration()[pri:2, instance:com.pageObjectModel.POM_001@441772e]" name="registration" duration-ms="9808" started-at="2020-01-03T10:37:48Z" finished-at="2020-01-03T10:37:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-01-02T10:38:31Z" finished-at="2020-01-02T10:38:31Z">
+        </test-method> <!-- registration -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pageObjectModel.POM_001@441772e]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-01-03T10:37:57Z" finished-at="2020-01-03T10:37:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

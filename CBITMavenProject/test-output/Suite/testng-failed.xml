@@ -6,10 +6,11 @@
     <classes>
       <class name="com.pageObjectModel.POM_001">
         <methods>
-          <include name="f"/>
           <include name="afterTest"/>
           <include name="startProcess"/>
+          <include name="loginPage"/>
           <include name="beforeTest"/>
+          <include name="registration"/>
         </methods>
       </class> <!-- com.pageObjectModel.POM_001 -->
     </classes>
