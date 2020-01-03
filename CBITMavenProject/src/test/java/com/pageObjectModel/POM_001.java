@@ -12,6 +12,7 @@ public class POM_001 extends BaseTest
 {
   
 	 LoginPage page;
+	 RegistrationPage reg;
 	
   @BeforeTest
   @Parameters("browser")
@@ -22,8 +23,8 @@ public class POM_001 extends BaseTest
 	  navigateUrl("automationpractice");
   }
   
-  @Test
-  public void f() 
+  @Test(priority = 1,enabled = false)
+  public void loginPage() 
   {
 	  
 	  page=new LoginPage(driver);
@@ -41,6 +42,13 @@ public class POM_001 extends BaseTest
 		 * )).getText(); String expectedText="Authentication failed.";
 		 * Assert.assertEquals(actualText, expectedText);
 		 */
+  }
+  
+  @Test(priority = 2)
+  public void registration() throws Exception
+  {
+	  reg=new RegistrationPage(driver);
+	  reg.customerRegistration();
   }
 
   @AfterTest

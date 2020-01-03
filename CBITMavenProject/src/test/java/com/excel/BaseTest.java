@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
+import java.util.Random;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -19,8 +20,10 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
-
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -64,8 +67,7 @@ public class BaseTest
 		or=new Properties();
 		or.load(fis);
 		
-		PropertyConfigurator.configure(projectPath+"//log4j.properties");	
-		
+		PropertyConfigurator.configure(projectPath+"//log4j.properties");			
 	}
 	
 	
@@ -105,6 +107,7 @@ public class BaseTest
 		//driver.get(p.getProperty(url));
 		driver.navigate().to(p.getProperty(url));
 		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 	
 	
@@ -181,6 +184,27 @@ public class BaseTest
 		
 		//put screen shot file in extent reports
 		test.log(LogStatus.INFO, "Screenshot --> "+ test.addScreenCapture(projectPath+"//failure//"+screenshotFileName));
+	}
+	
+	
+	public void waitForElement(WebElement locator, int timeinSeconds) 
+	{
+		WebDriverWait wait=new WebDriverWait(driver, timeinSeconds);
+		wait.until(ExpectedConditions.elementToBeClickable(locator));
+	}
+	
+	
+	public void selectItem(WebElement locator, int itemIndex) {
+		Select s=new Select(locator);
+		s.selectByIndex(itemIndex);
+	}
+	
+	public int randomNumber() 
+	{
+		Random r=new Random();
+		int ran = r.nextInt(99999);
+		
+		return ran;
 	}
 
 
